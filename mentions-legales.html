@@ -6,7 +6,7 @@
     <title>Mentions Légales — Dr Margot Bach, Chirurgien-Dentiste à La Ciotat</title>
     <meta name="description" content="Mentions légales du site du cabinet dentaire Dr Margot Bach à La Ciotat.">
     <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://www.dr-margotbach-dentiste.fr/mentions-legales.html">
+    <link rel="canonical" href="https://bobbythetraveler.github.io/dentiste-margot-bach/mentions-legales.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -90,13 +90,13 @@
             color: var(--rose);
         }
 
-        nav {
+        header nav {
             display: flex;
             align-items: center;
             gap: 2.5rem;
         }
 
-        nav a {
+        header nav a {
             text-decoration: none;
             color: var(--text-light);
             font-size: 0.85rem;
@@ -106,7 +106,7 @@
             transition: color var(--transition);
         }
 
-        nav a::after {
+        header nav a::after {
             content: '';
             position: absolute;
             bottom: -4px;
@@ -117,8 +117,8 @@
             transition: width var(--transition);
         }
 
-        nav a:hover { color: var(--text); }
-        nav a:hover::after { width: 100%; }
+        header nav a:hover { color: var(--text); }
+        header nav a:hover::after { width: 100%; }
 
         .nav-cta {
             background: var(--blush-deep);
@@ -380,7 +380,7 @@
         @media (max-width: 960px) {
             .menu-toggle { display: block; }
 
-            nav {
+            header nav {
                 position: fixed;
                 top: 0;
                 right: -100%;
@@ -395,9 +395,9 @@
                 box-shadow: -10px 0 40px rgba(0,0,0,0.05);
             }
 
-            nav.open { right: 0; }
+            header nav.open { right: 0; }
 
-            nav a {
+            header nav a {
                 font-size: 1.1rem;
             }
 
@@ -489,7 +489,7 @@
             <span class="logo-name">Margot Bach</span>
             <span class="logo-title">Chirurgien-dentiste</span>
         </a>
-        <nav id="nav">
+        <nav id="nav" aria-label="Navigation principale">
             <a href="index.html#accueil">Accueil</a>
             <a href="index.html#cabinet">Le Cabinet</a>
             <a href="index.html#soins">Les Soins</a>
@@ -497,7 +497,7 @@
             <a href="index.html#infos">Infos Pratiques</a>
             <a href="index.html#rdv" class="nav-cta">Prendre RDV</a>
         </nav>
-        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="nav">
             <span></span><span></span><span></span>
         </button>
     </div>
@@ -517,7 +517,7 @@
             <li><strong>Dr Margot Bach</strong>, chirurgien-dentiste</li>
             <li>Inscrite au Tableau de l'Ordre National des Chirurgiens-Dentistes</li>
             <li><strong>Adresse :</strong> 1 Aitterrand, 13600 La Ciotat</li>
-            <li><strong>Téléphone :</strong> <a href="tel:04308777">04 308 777</a></li>
+            <li><strong>Téléphone :</strong> <a href="tel:04XXXXXXXX">04 XX XX XX XX</a></li>
             <li><strong>Numéro RPPS :</strong> [à compléter]</li>
             <li><strong>Numéro ADELI :</strong> [à compléter]</li>
         </ul>
@@ -527,7 +527,7 @@
         <ul>
             <li><strong>GitHub, Inc.</strong></li>
             <li>88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis</li>
-            <li>Site web : <a href="https://github.com" target="_blank" rel="noopener">github.com</a></li>
+            <li>Site web : <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a></li>
         </ul>
 
         <h2>3. Activité réglementée</h2>
@@ -535,7 +535,7 @@
         <p>Elle est inscrite à l'Ordre des Chirurgiens-Dentistes du département des Bouches-du-Rhône (13).</p>
         <p><strong>Conseil National de l'Ordre des Chirurgiens-Dentistes :</strong><br>
         22, rue Émile Ménier — 75116 Paris<br>
-        <a href="https://www.ordre-chirurgiens-dentistes.fr" target="_blank" rel="noopener">www.ordre-chirurgiens-dentistes.fr</a></p>
+        <a href="https://www.ordre-chirurgiens-dentistes.fr" target="_blank" rel="noopener noreferrer">www.ordre-chirurgiens-dentistes.fr</a></p>
 
         <h2>4. Propriété intellectuelle</h2>
         <p>L'ensemble du contenu du site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive du Dr Margot Bach ou de ses partenaires, sauf mention contraire. Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, est interdite sans autorisation préalable écrite.</p>
@@ -545,7 +545,7 @@
         <p>Le site peut contenir des liens vers des sites tiers. Le Dr Margot Bach ne saurait être tenue responsable du contenu de ces sites externes.</p>
 
         <h2>6. Prise de rendez-vous en ligne</h2>
-        <p>La prise de rendez-vous en ligne est assurée par la plateforme <strong>Doctolib</strong>, opérée par Doctolib SAS, dont les conditions d'utilisation et la politique de confidentialité sont consultables sur <a href="https://www.doctolib.fr" target="_blank" rel="noopener">www.doctolib.fr</a>.</p>
+        <p>La prise de rendez-vous en ligne est assurée par la plateforme <strong>Doctolib</strong>, opérée par Doctolib SAS, dont les conditions d'utilisation et la politique de confidentialité sont consultables sur <a href="https://www.doctolib.fr" target="_blank" rel="noopener noreferrer">www.doctolib.fr</a>.</p>
 
         <h2>7. Droit applicable</h2>
         <p>Le présent site et ses mentions légales sont régis par le droit français. En cas de litige, les tribunaux de Marseille seront seuls compétents.</p>
@@ -553,7 +553,7 @@
         <h2>8. Contact</h2>
         <p>Pour toute question relative au site ou à ces mentions légales :</p>
         <ul>
-            <li><strong>Téléphone :</strong> <a href="tel:04308777">04 308 777</a></li>
+            <li><strong>Téléphone :</strong> <a href="tel:04XXXXXXXX">04 XX XX XX XX</a></li>
             <li><strong>Adresse :</strong> 1 Aitterrand, 13600 La Ciotat</li>
         </ul>
 
@@ -569,7 +569,7 @@
                 <span class="logo-title">Chirurgien-dentiste</span>
                 <p>Un cabinet dentaire chaleureux à La Ciotat, dédié à votre santé bucco-dentaire et à votre bien-être.</p>
             </div>
-            <div>
+            <nav aria-label="Navigation secondaire">
                 <h4>Navigation</h4>
                 <ul>
                     <li><a href="index.html#accueil">Accueil</a></li>
@@ -578,8 +578,8 @@
                     <li><a href="index.html#equipe">Équipe</a></li>
                     <li><a href="index.html#infos">Infos Pratiques</a></li>
                 </ul>
-            </div>
-            <div>
+            </nav>
+            <nav aria-label="Soins proposés">
                 <h4>Soins</h4>
                 <ul>
                     <li><a href="index.html#soins">Soins dentaires</a></li>
@@ -587,7 +587,7 @@
                     <li><a href="index.html#soins">Esthétique du sourire</a></li>
                     <li><a href="urgence-dentaire-la-ciotat.html">Urgences</a></li>
                 </ul>
-            </div>
+            </nav>
             <div>
                 <h4>Contact</h4>
                 <div class="footer-contact-item">
@@ -596,11 +596,11 @@
                 </div>
                 <div class="footer-contact-item">
                     <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span><a href="tel:04308777">04 308 777</a></span>
+                    <span><a href="tel:04XXXXXXXX">04 XX XX XX XX</a></span>
                 </div>
                 <div class="footer-contact-item">
                     <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    <span><a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener">Doctolib</a></span>
+                    <span><a href="https://www.doctolib.fr/dentiste/la-ciotat/margot-bach" target="_blank" rel="noopener noreferrer">Doctolib</a></span>
                 </div>
             </div>
         </div>
@@ -640,6 +640,7 @@
         nav.classList.toggle('open');
         overlay.classList.toggle('active');
         document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+        menuToggle.setAttribute('aria-expanded', nav.classList.contains('open') ? 'true' : 'false');
     }
 
     menuToggle.addEventListener('click', toggleMenu);

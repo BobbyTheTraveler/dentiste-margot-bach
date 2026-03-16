@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dentiste Cassis — Cabinet Dentaire à Proximité | Dr Margot Bach La Ciotat</title>
-    <meta name="description" content="Vous cherchez un dentiste proche de Cassis ? Notre cabinet dentaire à La Ciotat (10 min) vous reçoit rapidement. RDV au 04 308 777.">
+    <meta name="description" content="Vous cherchez un dentiste proche de Cassis ? Notre cabinet dentaire à La Ciotat (10 min) vous reçoit rapidement. RDV au 04 XX XX XX XX.">
     <meta name="keywords" content="dentiste Cassis, cabinet dentaire Cassis, urgence dentaire Cassis, dentiste près de Cassis, dentiste Cassis La Ciotat">
     <meta name="author" content="Dr Margot Bach">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.dr-margotbach-dentiste.fr/dentiste-cassis.html">
+    <link rel="canonical" href="https://bobbythetraveler.github.io/dentiste-margot-bach/dentiste-cassis.html">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Dentiste Cassis — Cabinet Dentaire à Proximité | Dr Margot Bach La Ciotat">
-    <meta property="og:description" content="Vous cherchez un dentiste proche de Cassis ? Notre cabinet dentaire à La Ciotat (10 min) vous reçoit rapidement. RDV au 04 308 777.">
+    <meta property="og:description" content="Vous cherchez un dentiste proche de Cassis ? Notre cabinet dentaire à La Ciotat (10 min) vous reçoit rapidement. RDV au 04 XX XX XX XX.">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Geo Meta Tags -->
@@ -27,8 +27,8 @@
         "@context": "https://schema.org",
         "@type": ["LocalBusiness", "Dentist"],
         "name": "Cabinet Dentaire Dr Margot Bach",
-        "url": "https://www.dr-margotbach-dentiste.fr",
-        "telephone": "+33-4-308-777",
+        "url": "https://bobbythetraveler.github.io/dentiste-margot-bach",
+        "telephone": "+33-X-XX-XX-XX-XX",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "1 Aitterrand",
@@ -148,13 +148,13 @@
             color: var(--rose);
         }
 
-        nav {
+        header nav {
             display: flex;
             align-items: center;
             gap: 2.5rem;
         }
 
-        nav a {
+        header nav a {
             text-decoration: none;
             color: var(--text-light);
             font-size: 0.85rem;
@@ -164,7 +164,7 @@
             transition: color var(--transition);
         }
 
-        nav a::after {
+        header nav a::after {
             content: '';
             position: absolute;
             bottom: -4px;
@@ -175,8 +175,8 @@
             transition: width var(--transition);
         }
 
-        nav a:hover { color: var(--text); }
-        nav a:hover::after { width: 100%; }
+        header nav a:hover { color: var(--text); }
+        header nav a:hover::after { width: 100%; }
 
         .nav-cta {
             background: var(--blush-deep);
@@ -792,7 +792,7 @@
         @media (max-width: 960px) {
             .menu-toggle { display: block; }
 
-            nav {
+            header nav {
                 position: fixed;
                 top: 0;
                 right: -100%;
@@ -807,9 +807,9 @@
                 box-shadow: -10px 0 40px rgba(0,0,0,0.05);
             }
 
-            nav.open { right: 0; }
+            header nav.open { right: 0; }
 
-            nav a { font-size: 1.1rem; }
+            header nav a { font-size: 1.1rem; }
 
             .nav-cta {
                 font-size: 1rem !important;
@@ -856,7 +856,7 @@
             <span class="logo-name">Margot Bach</span>
             <span class="logo-title">Chirurgien-dentiste</span>
         </a>
-        <nav id="nav">
+        <nav id="nav" aria-label="Navigation principale">
             <a href="index.html#accueil">Accueil</a>
             <a href="index.html#cabinet">Le Cabinet</a>
             <a href="index.html#soins">Les Soins</a>
@@ -864,7 +864,7 @@
             <a href="index.html#infos">Infos Pratiques</a>
             <a href="index.html#rdv" class="nav-cta">Prendre RDV</a>
         </nav>
-        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="nav">
             <span></span><span></span><span></span>
         </button>
     </div>
@@ -878,11 +878,11 @@
         <h1>Dentiste à Cassis — <em>Cabinet Proche, La Ciotat</em></h1>
         <p class="hero-intro">Vous habitez Cassis et recherchez un dentiste à proximité ? Le cabinet du Dr Margot Bach, situé à La Ciotat, vous accueille à seulement 10 minutes en voiture. Des soins dentaires de qualité, tout près de chez vous.</p>
         <div class="hero-buttons">
-            <a href="tel:04308777" class="btn btn-primary">
+            <a href="tel:04XXXXXXXX" class="btn btn-primary">
                 <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                04 308 777
+                04 XX XX XX XX
             </a>
-            <a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://www.doctolib.fr/dentiste/la-ciotat/margot-bach" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 Réserver sur Doctolib
             </a>
@@ -901,7 +901,7 @@
         <div class="content-block reveal">
             <p>Le Dr Margot Bach exerce au <strong>1 Aitterrand, 13600 La Ciotat</strong>, à quelques kilomètres seulement du centre de Cassis. De nombreux patients cassidains nous font déjà confiance pour leurs soins dentaires courants, leurs urgences et leurs traitements esthétiques.</p>
             <p>Le cabinet propose des <strong>créneaux rapides</strong> et une prise en charge attentive, dans un environnement moderne et chaleureux. Que ce soit pour un contrôle annuel, un <a href="detartrage-la-ciotat.html">détartrage</a>, un soin de carie ou une <a href="urgence-dentaire-la-ciotat.html">urgence dentaire</a>, vous bénéficiez d'un accueil personnalisé sans les délais d'attente que l'on rencontre parfois dans les grands centres urbains.</p>
-            <p>Prendre rendez-vous est simple : appelez le <strong><a href="tel:04308777">04 308 777</a></strong> ou réservez directement en ligne via <a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener">Doctolib</a>.</p>
+            <p>Prendre rendez-vous est simple : appelez le <strong><a href="tel:04XXXXXXXX">04 XX XX XX XX</a></strong> ou réservez directement en ligne via <a href="https://www.doctolib.fr/dentiste/la-ciotat/margot-bach" target="_blank" rel="noopener noreferrer">Doctolib</a>.</p>
         </div>
     </div>
 </section>
@@ -978,11 +978,11 @@
         <h2>Votre dentiste près de <em>Cassis</em></h2>
         <p>Prenez rendez-vous au cabinet du Dr Margot Bach à La Ciotat. Nous vous accueillons avec plaisir, à seulement 10 minutes de Cassis.</p>
         <div class="hero-buttons">
-            <a href="tel:04308777" class="btn btn-white">
+            <a href="tel:04XXXXXXXX" class="btn btn-white">
                 <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                04 308 777
+                04 XX XX XX XX
             </a>
-            <a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener" class="btn btn-ghost">
+            <a href="https://www.doctolib.fr/dentiste/la-ciotat/margot-bach" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 Réserver sur Doctolib
             </a>
@@ -999,7 +999,7 @@
                 <span class="logo-title">Chirurgien-dentiste</span>
                 <p>Un cabinet dentaire chaleureux à La Ciotat, dédié à votre santé bucco-dentaire et à votre bien-être.</p>
             </div>
-            <div>
+            <nav aria-label="Navigation secondaire">
                 <h4>Navigation</h4>
                 <ul>
                     <li><a href="index.html#accueil">Accueil</a></li>
@@ -1008,8 +1008,8 @@
                     <li><a href="index.html#equipe">Équipe</a></li>
                     <li><a href="index.html#infos">Infos Pratiques</a></li>
                 </ul>
-            </div>
-            <div>
+            </nav>
+            <nav aria-label="Soins proposés">
                 <h4>Soins</h4>
                 <ul>
                     <li><a href="index.html#soins">Soins dentaires</a></li>
@@ -1018,7 +1018,7 @@
                     <li><a href="blanchiment-dentaire-la-ciotat.html">Blanchiment dentaire</a></li>
                     <li><a href="urgence-dentaire-la-ciotat.html">Urgences</a></li>
                 </ul>
-            </div>
+            </nav>
             <div>
                 <h4>Contact</h4>
                 <div class="footer-contact-item">
@@ -1027,11 +1027,11 @@
                 </div>
                 <div class="footer-contact-item">
                     <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span><a href="tel:04308777">04 308 777</a></span>
+                    <span><a href="tel:04XXXXXXXX">04 XX XX XX XX</a></span>
                 </div>
                 <div class="footer-contact-item">
                     <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    <span><a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener">Doctolib</a></span>
+                    <span><a href="https://www.doctolib.fr/dentiste/la-ciotat/margot-bach" target="_blank" rel="noopener noreferrer">Doctolib</a></span>
                 </div>
             </div>
         </div>
@@ -1072,6 +1072,7 @@
         nav.classList.toggle('open');
         overlay.classList.toggle('active');
         document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+        menuToggle.setAttribute('aria-expanded', nav.classList.contains('open') ? 'true' : 'false');
     }
 
     menuToggle.addEventListener('click', toggleMenu);

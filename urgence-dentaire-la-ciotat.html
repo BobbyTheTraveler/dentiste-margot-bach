@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urgence Dentaire La Ciotat — Cabinet Dr Margot Bach | Tél. 04 308 777</title>
-    <meta name="description" content="Urgence dentaire à La Ciotat ? Le cabinet du Dr Margot Bach vous reçoit rapidement. Appelez le 04 308 777. Douleur, dent cassée, abcès — pris en charge le jour même.">
+    <title>Urgence Dentaire La Ciotat — Dr Margot Bach</title>
+    <meta name="description" content="Urgence dentaire à La Ciotat ? Le cabinet du Dr Margot Bach vous reçoit rapidement. Douleur, dent cassée, abcès — pris en charge le jour même.">
     <meta name="keywords" content="urgence dentaire La Ciotat, dentiste urgence La Ciotat, douleur dentaire La Ciotat, rage de dents La Ciotat, dentiste samedi La Ciotat, urgence dentiste Cassis, urgence dentiste Aubagne">
     <meta name="author" content="Dr Margot Bach">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.dr-margotbach-dentiste.fr/urgence-dentaire-la-ciotat">
+    <link rel="canonical" href="https://bobbythetraveler.github.io/dentiste-margot-bach/urgence-dentaire-la-ciotat.html">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Urgence Dentaire La Ciotat — Cabinet Dr Margot Bach">
-    <meta property="og:description" content="Urgence dentaire à La Ciotat ? Notre cabinet vous reçoit rapidement. Appelez le 04 308 777. Douleur, dent cassée, abcès — pris en charge le jour même.">
+    <meta property="og:description" content="Urgence dentaire à La Ciotat ? Notre cabinet vous reçoit rapidement. Appelez le 04 XX XX XX XX. Douleur, dent cassée, abcès — pris en charge le jour même.">
     <meta property="og:locale" content="fr_FR">
+    <meta property="og:image" content="https://bobbythetraveler.github.io/dentiste-margot-bach/images/og-image.svg">
+    <meta property="og:url" content="https://bobbythetraveler.github.io/dentiste-margot-bach/urgence-dentaire-la-ciotat.html">
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/dentiste-margot-bach/sitemap.xml">
 
     <!-- Geo Meta Tags -->
     <meta name="geo.region" content="FR-13">
@@ -27,8 +32,8 @@
         "@context": "https://schema.org",
         "@type": ["LocalBusiness", "Dentist"],
         "name": "Cabinet Dentaire Dr Margot Bach",
-        "url": "https://www.dr-margotbach-dentiste.fr",
-        "telephone": "+33-4-308-777",
+        "url": "https://bobbythetraveler.github.io/dentiste-margot-bach",
+        "telephone": "+33-X-XX-XX-XX-XX",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "1 Aitterrand",
@@ -59,7 +64,7 @@
                 "name": "Avez-vous un dentiste disponible en urgence à La Ciotat ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Oui, le cabinet du Dr Margot Bach à La Ciotat assure des consultations d'urgence. Appelez le 04 308 777 dès l'apparition de vos symptômes pour obtenir un rendez-vous rapide, souvent le jour même."
+                    "text": "Oui, le cabinet du Dr Margot Bach à La Ciotat assure des consultations d'urgence. Appelez le 04 XX XX XX XX dès l'apparition de vos symptômes pour obtenir un rendez-vous rapide, souvent le jour même."
                 }
             },
             {
@@ -144,6 +149,20 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--urgent);
+            color: white;
+            padding: 8px 16px;
+            z-index: 10000;
+            font-size: 0.85rem;
+            border-radius: 0 0 8px 0;
+            transition: top 0.3s;
+        }
+        .skip-link:focus { top: 0; }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -194,11 +213,11 @@
             color: var(--rose);
         }
 
-        nav { display: flex; align-items: center; gap: 2.5rem; }
-        nav a { text-decoration: none; color: var(--text-light); font-size: 0.85rem; font-weight: 400; letter-spacing: 0.04em; position: relative; transition: color var(--transition); }
-        nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--rose); transition: width var(--transition); }
-        nav a:hover { color: var(--text); }
-        nav a:hover::after { width: 100%; }
+        header nav { display: flex; align-items: center; gap: 2.5rem; }
+        header nav a { text-decoration: none; color: var(--text-light); font-size: 0.85rem; font-weight: 400; letter-spacing: 0.04em; position: relative; transition: color var(--transition); }
+        header nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--rose); transition: width var(--transition); }
+        header nav a:hover { color: var(--text); }
+        header nav a:hover::after { width: 100%; }
         .nav-cta { background: var(--blush-deep); color: white !important; padding: 10px 24px; border-radius: 50px; font-size: 0.82rem !important; letter-spacing: 0.05em; transition: background var(--transition), transform var(--transition) !important; }
         .nav-cta::after { display: none !important; }
         .nav-cta:hover { background: var(--rose-dark) !important; transform: translateY(-1px); }
@@ -687,9 +706,9 @@
         /* Mobile */
         @media (max-width: 960px) {
             .menu-toggle { display: block; }
-            nav { position: fixed; top: 0; right: -100%; width: min(360px, 85vw); height: 100vh; background: var(--warm-white); flex-direction: column; justify-content: center; gap: 2rem; padding: 40px; transition: right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); box-shadow: -10px 0 40px rgba(0,0,0,0.05); z-index: 999; }
-            nav.open { right: 0; }
-            nav a { font-size: 1.1rem; }
+            header nav { position: fixed; top: 0; right: -100%; width: min(360px, 85vw); height: 100vh; background: var(--warm-white); flex-direction: column; justify-content: center; gap: 2rem; padding: 40px; transition: right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); box-shadow: -10px 0 40px rgba(0,0,0,0.05); z-index: 999; }
+            header nav.open { right: 0; }
+            header nav a { font-size: 1.1rem; }
             .nav-cta { font-size: 1rem !important; padding: 14px 28px; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
@@ -718,10 +737,11 @@
     </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Aller au contenu</a>
 
 <!-- Urgent banner -->
 <div class="urgent-banner">
-    Urgence dentaire ? Appelez-nous maintenant : <a href="tel:04308777">04 308 777</a>
+    Urgence dentaire ? Appelez-nous maintenant : <a href="tel:04XXXXXXXX">04 XX XX XX XX</a>
 </div>
 
 <!-- Header -->
@@ -731,7 +751,7 @@
             <span class="logo-name">Margot Bach</span>
             <span class="logo-title">Chirurgien-dentiste</span>
         </a>
-        <nav id="nav">
+        <nav id="nav" aria-label="Navigation principale">
             <a href="index.html#accueil">Accueil</a>
             <a href="index.html#cabinet">Le Cabinet</a>
             <a href="index.html#soins">Les Soins</a>
@@ -739,12 +759,28 @@
             <a href="index.html#infos">Infos Pratiques</a>
             <a href="index.html#rdv" class="nav-cta">Prendre RDV</a>
         </nav>
-        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="nav">
             <span></span><span></span><span></span>
         </button>
     </div>
 </header>
 <div class="nav-overlay" id="navOverlay"></div>
+
+<main id="main">
+<!-- Breadcrumb -->
+<nav aria-label="Fil d'Ariane" style="max-width: 1200px; margin: 0 auto; padding: 12px clamp(20px, 5vw, 60px); font-size: 0.82rem;">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" style="list-style: none; display: flex; gap: 6px; color: var(--text-muted);">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html" style="color: var(--text-light); text-decoration: none;"><span itemprop="name">Accueil</span></a>
+            <meta itemprop="position" content="1">
+            <span style="margin-left: 6px;">/</span>
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">Urgence dentaire La Ciotat</span>
+            <meta itemprop="position" content="2">
+        </li>
+    </ol>
+</nav>
 
 <!-- Hero -->
 <section class="page-hero">
@@ -758,11 +794,11 @@
                 <h1>Urgence Dentaire <em>à La Ciotat</em> — Pris en Charge Rapidement</h1>
                 <p class="hero-text">Vous avez une urgence dentaire à La Ciotat ? Le cabinet du Dr Margot Bach vous accueille rapidement pour soulager votre douleur. Que vous habitiez La Ciotat, Cassis, Ceyreste ou La Madrague, nous sommes disponibles pour vous recevoir dans les meilleurs délais.</p>
                 <div class="hero-ctas">
-                    <a href="tel:04308777" class="btn-urgent">
+                    <a href="tel:04XXXXXXXX" class="btn-urgent">
                         <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        Appeler le 04 308 777
+                        Appeler le 04 XX XX XX XX
                     </a>
-                    <a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener" class="btn-secondary">Prendre rendez-vous</a>
+                    <a href="https://www.doctolib.fr/dentiste/la-ciotat/margot-bach" target="_blank" rel="noopener noreferrer" class="btn-secondary">Prendre rendez-vous</a>
                 </div>
             </div>
             <div class="hero-card">
@@ -773,7 +809,7 @@
                 </div>
                 <div class="hero-card-item">
                     <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <p><strong>Appelez directement</strong><br><a href="tel:04308777" style="color: var(--urgent); text-decoration: none; font-weight: 500;">04 308 777</a></p>
+                    <p><strong>Appelez directement</strong><br><a href="tel:04XXXXXXXX" style="color: var(--urgent); text-decoration: none; font-weight: 500;">04 XX XX XX XX</a></p>
                 </div>
                 <div class="hero-card-item">
                     <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -795,7 +831,7 @@
             <span class="section-label">Urgences dentaires</span>
             <h2 class="section-title">Quand consulter en <em>urgence dentaire</em> ?</h2>
             <p class="content-text">Certaines situations dentaires nécessitent une prise en charge rapide pour éviter des complications. Si vous ressentez une douleur vive, un gonflement inhabituel ou si vous avez subi un traumatisme au niveau de la bouche, n'attendez pas : contactez immédiatement notre cabinet dentaire à La Ciotat.</p>
-            <p class="content-text">Les patients de La Ciotat, Cassis, Aubagne et des communes voisines peuvent nous joindre au <a href="tel:04308777" style="color: var(--urgent); font-weight: 400;">04 308 777</a> pour obtenir un rendez-vous d'urgence rapide.</p>
+            <p class="content-text">Les patients de La Ciotat, Cassis, Aubagne et des communes voisines peuvent nous joindre au <a href="tel:04XXXXXXXX" style="color: var(--urgent); font-weight: 400;">04 XX XX XX XX</a> pour obtenir un rendez-vous d'urgence rapide.</p>
         </div>
         <div class="urgency-grid">
             <div class="urgency-card">
@@ -817,7 +853,7 @@
                     <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                 </div>
                 <h3>Rage de dents / douleur aigue</h3>
-                <p>Une douleur dentaire intense et continue, ou une rage de dents, peut indiquer une carie profonde ou une inflammation du nerf. Ce type de douleur ne passe généralement pas seul. Appelez le <a href="tel:04308777" style="color: var(--urgent);">04 308 777</a> pour une consultation rapide.</p>
+                <p>Une douleur dentaire intense et continue, ou une rage de dents, peut indiquer une carie profonde ou une inflammation du nerf. Ce type de douleur ne passe généralement pas seul. Appelez le <a href="tel:04XXXXXXXX" style="color: var(--urgent);">04 XX XX XX XX</a> pour une consultation rapide.</p>
             </div>
         </div>
     </div>
@@ -828,9 +864,9 @@
     <div class="container">
         <h2>Vous avez une douleur dentaire ? Appelez-nous maintenant</h2>
         <p>Prise en charge rapide au cabinet du Dr Margot Bach, La Ciotat</p>
-        <a href="tel:04308777" class="btn-urgent">
+        <a href="tel:04XXXXXXXX" class="btn-urgent">
             <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Appeler le 04 308 777
+            Appeler le 04 XX XX XX XX
         </a>
     </div>
 </div>
@@ -863,7 +899,7 @@
                 <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 <div>
                     <strong>Téléphone urgence</strong>
-                    <span><a href="tel:04308777">04 308 777</a></span>
+                    <span><a href="tel:04XXXXXXXX">04 XX XX XX XX</a></span>
                 </div>
             </div>
         </div>
@@ -888,7 +924,7 @@
                         <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Oui, le cabinet du Dr Margot Bach à La Ciotat assure des consultations d'urgence. Appelez le 04 308 777 dès l'apparition de vos symptômes pour obtenir un rendez-vous rapide, souvent le jour même. Nous accueillons les patients de La Ciotat, Cassis, Aubagne et des communes environnantes.</p>
+                        <p>Oui, le cabinet du Dr Margot Bach à La Ciotat assure des consultations d'urgence. Appelez le 04 XX XX XX XX dès l'apparition de vos symptômes pour obtenir un rendez-vous rapide, souvent le jour même. Nous accueillons les patients de La Ciotat, Cassis, Aubagne et des communes environnantes.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -933,7 +969,7 @@
                         <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Le cabinet du Dr Margot Bach prend en charge toutes les urgences dentaires courantes : rage de dents, dent cassée ou fêlée, abcès dentaire, perte de couronne ou de plombage, traumatisme dentaire suite à un choc, infection ou gonflement de la gencive. Appelez-nous au 04 308 777 pour être orienté rapidement.</p>
+                        <p>Le cabinet du Dr Margot Bach prend en charge toutes les urgences dentaires courantes : rage de dents, dent cassée ou fêlée, abcès dentaire, perte de couronne ou de plombage, traumatisme dentaire suite à un choc, infection ou gonflement de la gencive. Appelez-nous au 04 XX XX XX XX pour être orienté rapidement.</p>
                     </div>
                 </div>
             </div>
@@ -947,16 +983,18 @@
         <h2>Besoin d'un dentiste en urgence à La Ciotat ?</h2>
         <p>Le cabinet du Dr Margot Bach vous reçoit rapidement. Appelez ou prenez rendez-vous en ligne.</p>
         <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-            <a href="tel:04308777" class="btn-urgent">
+            <a href="tel:04XXXXXXXX" class="btn-urgent">
                 <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                04 308 777
+                04 XX XX XX XX
             </a>
-            <a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener" class="btn-secondary" style="border-color: rgba(255,255,255,0.3); color: white;">
+            <a href="https://www.doctolib.fr/dentiste/la-ciotat/margot-bach" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="border-color: rgba(255,255,255,0.3); color: white;">
                 Prendre rendez-vous sur Doctolib
             </a>
         </div>
     </div>
 </div>
+
+</main>
 
 <!-- Footer -->
 <footer>
@@ -967,7 +1005,7 @@
                 <span class="logo-title">Chirurgien-dentiste</span>
                 <p>Un cabinet dentaire chaleureux à La Ciotat, dédié à votre santé bucco-dentaire et à votre bien-être.</p>
             </div>
-            <div>
+            <nav aria-label="Navigation secondaire">
                 <h4>Navigation</h4>
                 <ul>
                     <li><a href="index.html#accueil">Accueil</a></li>
@@ -976,16 +1014,16 @@
                     <li><a href="index.html#equipe">Équipe</a></li>
                     <li><a href="index.html#infos">Infos Pratiques</a></li>
                 </ul>
-            </div>
-            <div>
+            </nav>
+            <nav aria-label="Soins proposés">
                 <h4>Soins</h4>
                 <ul>
                     <li><a href="index.html#soins">Soins dentaires</a></li>
                     <li><a href="index.html#soins">Prévention</a></li>
                     <li><a href="index.html#soins">Esthétique du sourire</a></li>
-                    <li><a href="urgence-dentaire-la-ciotat.html">Urgences</a></li>
+                    <li><a href="urgence-dentaire-la-ciotat.html" aria-current="page">Urgences</a></li>
                 </ul>
-            </div>
+            </nav>
             <div>
                 <h4>Contact</h4>
                 <div class="footer-contact-item">
@@ -994,11 +1032,11 @@
                 </div>
                 <div class="footer-contact-item">
                     <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span><a href="tel:04308777">04 308 777</a></span>
+                    <span><a href="tel:04XXXXXXXX">04 XX XX XX XX</a></span>
                 </div>
                 <div class="footer-contact-item">
                     <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    <span><a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener">Doctolib</a></span>
+                    <span><a href="https://www.doctolib.fr/dentiste/la-ciotat/margot-bach" target="_blank" rel="noopener noreferrer">Doctolib</a></span>
                 </div>
             </div>
         </div>
@@ -1022,6 +1060,7 @@
         nav.classList.toggle('open');
         overlay.classList.toggle('active');
         document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+        menuToggle.setAttribute('aria-expanded', nav.classList.contains('open') ? 'true' : 'false');
     }
     menuToggle.addEventListener('click', toggleMenu);
     overlay.addEventListener('click', toggleMenu);
