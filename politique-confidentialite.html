@@ -489,9 +489,24 @@
             fill: none;
             stroke-width: 2;
         }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--blush-deep);
+            color: white;
+            padding: 8px 16px;
+            z-index: 10000;
+            font-size: 0.85rem;
+            border-radius: 0 0 8px 0;
+            transition: top 0.3s;
+        }
+        .skip-link:focus { top: 0; }
     </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Aller au contenu</a>
 
 <header id="header">
     <div class="header-inner">
@@ -514,6 +529,7 @@
 </header>
 <div class="nav-overlay" id="navOverlay"></div>
 
+<main id="main">
 <div class="container">
     <div class="page-hero">
         <h1>Politique de <em>confidentialité</em></h1>
@@ -573,6 +589,8 @@
     </div>
 </div>
 
+</main>
+
 <footer>
     <div class="container">
         <div class="footer-grid">
@@ -620,7 +638,7 @@
             <span>&copy; 2026 Dr Margot Bach — Tous droits réservés</span>
             <div class="footer-links">
                 <a href="mentions-legales.html">Mentions légales</a>
-                <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                <a href="politique-confidentialite.html" aria-current="page">Politique de confidentialité</a>
             </div>
         </div>
     </div>

@@ -1052,9 +1052,24 @@
                 min-width: 100px;
             }
         }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--blush-deep);
+            color: white;
+            padding: 8px 16px;
+            z-index: 10000;
+            font-size: 0.85rem;
+            border-radius: 0 0 8px 0;
+            transition: top 0.3s;
+        }
+        .skip-link:focus { top: 0; }
     </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Aller au contenu</a>
 
 <header id="header">
     <div class="header-inner">
@@ -1077,6 +1092,7 @@
 </header>
 <div class="nav-overlay" id="navOverlay"></div>
 
+<main id="main">
 <!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero">
     <div class="container">
@@ -1405,6 +1421,8 @@
 </section>
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
+</main>
+
 <footer>
     <div class="container">
         <div class="footer-grid">
@@ -1526,8 +1544,8 @@
             }
         });
     }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -40px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px -20px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
