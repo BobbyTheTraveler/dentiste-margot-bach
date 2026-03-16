@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales — Dr Margot Bach, Chirurgien-Dentiste à La Ciotat</title>
+    <meta name="description" content="Mentions légales du site du cabinet dentaire Dr Margot Bach à La Ciotat.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.dr-margotbach-dentiste.fr/mentions-legales.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --cream: #FAF7F4;
+            --warm-white: #FFFCF9;
+            --blush: #E8D5CC;
+            --blush-deep: #D4A898;
+            --rose: #C4A48E;
+            --rose-dark: #A8876F;
+            --earth: #8B7355;
+            --text: #4A3F35;
+            --text-light: #7A6E62;
+            --text-muted: #A89B8F;
+            --shadow-soft: 0 4px 30px rgba(74, 63, 53, 0.06);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            font-weight: 300;
+            color: var(--text);
+            background: var(--warm-white);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 252, 249, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 1px 20px rgba(74, 63, 53, 0.06);
+            padding: 0 clamp(20px, 5vw, 60px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+
+        .logo-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: var(--text);
+            line-height: 1.1;
+        }
+
+        .logo-title {
+            font-family: 'Jost', sans-serif;
+            font-weight: 300;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--rose);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--rose-dark);
+            font-size: 0.88rem;
+            font-weight: 400;
+            transition: gap var(--transition), color var(--transition);
+        }
+
+        .back-link:hover { gap: 12px; color: var(--text); }
+
+        .back-link svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        /* Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 clamp(20px, 5vw, 60px);
+        }
+
+        .page-hero {
+            padding: clamp(60px, 8vw, 100px) 0 clamp(40px, 5vw, 60px);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.2;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-hero h1 em {
+            font-style: italic;
+            font-weight: 400;
+            color: var(--rose-dark);
+        }
+
+        .page-hero p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .legal-content {
+            padding-bottom: clamp(60px, 8vw, 100px);
+        }
+
+        .legal-content h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: var(--text);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--blush);
+        }
+
+        .legal-content h3 {
+            font-family: 'Jost', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-content p {
+            color: var(--text-light);
+            font-size: 0.92rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .legal-content ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        .legal-content ul li {
+            color: var(--text-light);
+            font-size: 0.92rem;
+            padding: 4px 0 4px 20px;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .legal-content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 13px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--blush-deep);
+        }
+
+        .legal-content a {
+            color: var(--rose-dark);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .legal-content a:hover { color: var(--earth); }
+
+        .legal-content strong {
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: rgba(255, 252, 249, 0.7);
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            color: rgba(255, 252, 249, 0.4);
+        }
+
+        footer a {
+            color: rgba(255, 252, 249, 0.4);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        footer a:hover { color: var(--blush); }
+
+        .footer-links { display: flex; gap: 24px; }
+
+        @media (max-width: 600px) {
+            footer .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-name">Margot Bach</span>
+            <span class="logo-title">Chirurgien-dentiste</span>
+        </a>
+        <a href="index.html" class="back-link">
+            <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Retour au site
+        </a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="page-hero">
+        <h1>Mentions <em>légales</em></h1>
+        <p>Informations légales relatives au site du cabinet dentaire.</p>
+    </div>
+
+    <div class="legal-content">
+        <h2>1. Informations sur l'éditeur</h2>
+        <p>Le présent site est édité par :</p>
+        <ul>
+            <li><strong>Dr Margot Bach</strong>, chirurgien-dentiste</li>
+            <li>Inscrite au Tableau de l'Ordre National des Chirurgiens-Dentistes</li>
+            <li><strong>Adresse :</strong> 1 Aitterrand, 13600 La Ciotat</li>
+            <li><strong>Téléphone :</strong> <a href="tel:04308777">04 308 777</a></li>
+            <li><strong>Numéro RPPS :</strong> [à compléter]</li>
+            <li><strong>Numéro ADELI :</strong> [à compléter]</li>
+        </ul>
+
+        <h2>2. Hébergement</h2>
+        <p>Le site est hébergé par :</p>
+        <ul>
+            <li><strong>GitHub, Inc.</strong></li>
+            <li>88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis</li>
+            <li>Site web : <a href="https://github.com" target="_blank" rel="noopener">github.com</a></li>
+        </ul>
+
+        <h2>3. Activité réglementée</h2>
+        <p>Le Dr Margot Bach exerce la profession de chirurgien-dentiste, profession réglementée par le <strong>Code de la Santé Publique</strong> (articles L.4141-1 et suivants).</p>
+        <p>Elle est inscrite à l'Ordre des Chirurgiens-Dentistes du département des Bouches-du-Rhône (13).</p>
+        <p><strong>Conseil National de l'Ordre des Chirurgiens-Dentistes :</strong><br>
+        22, rue Émile Ménier — 75116 Paris<br>
+        <a href="https://www.ordre-chirurgiens-dentistes.fr" target="_blank" rel="noopener">www.ordre-chirurgiens-dentistes.fr</a></p>
+
+        <h2>4. Propriété intellectuelle</h2>
+        <p>L'ensemble du contenu du site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive du Dr Margot Bach ou de ses partenaires, sauf mention contraire. Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, est interdite sans autorisation préalable écrite.</p>
+
+        <h2>5. Responsabilité</h2>
+        <p>Les informations fournies sur ce site le sont à titre informatif et ne sauraient se substituer à une consultation médicale. Le Dr Margot Bach ne peut être tenue responsable de l'utilisation qui pourrait être faite des informations contenues sur ce site.</p>
+        <p>Le site peut contenir des liens vers des sites tiers. Le Dr Margot Bach ne saurait être tenue responsable du contenu de ces sites externes.</p>
+
+        <h2>6. Prise de rendez-vous en ligne</h2>
+        <p>La prise de rendez-vous en ligne est assurée par la plateforme <strong>Doctolib</strong>, opérée par Doctolib SAS, dont les conditions d'utilisation et la politique de confidentialité sont consultables sur <a href="https://www.doctolib.fr" target="_blank" rel="noopener">www.doctolib.fr</a>.</p>
+
+        <h2>7. Droit applicable</h2>
+        <p>Le présent site et ses mentions légales sont régis par le droit français. En cas de litige, les tribunaux de Marseille seront seuls compétents.</p>
+
+        <h2>8. Contact</h2>
+        <p>Pour toute question relative au site ou à ces mentions légales :</p>
+        <ul>
+            <li><strong>Téléphone :</strong> <a href="tel:04308777">04 308 777</a></li>
+            <li><strong>Adresse :</strong> 1 Aitterrand, 13600 La Ciotat</li>
+        </ul>
+
+        <p style="margin-top: 2rem; font-size: 0.82rem; color: var(--text-muted);">Dernière mise à jour : mars 2026</p>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <span>&copy; 2026 Dr Margot Bach — Tous droits réservés</span>
+        <div class="footer-links">
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

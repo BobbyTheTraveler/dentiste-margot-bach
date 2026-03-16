@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité — Dr Margot Bach, Chirurgien-Dentiste à La Ciotat</title>
+    <meta name="description" content="Politique de confidentialité et protection des données personnelles du cabinet dentaire Dr Margot Bach à La Ciotat.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.dr-margotbach-dentiste.fr/politique-confidentialite.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --cream: #FAF7F4;
+            --warm-white: #FFFCF9;
+            --blush: #E8D5CC;
+            --blush-deep: #D4A898;
+            --rose: #C4A48E;
+            --rose-dark: #A8876F;
+            --earth: #8B7355;
+            --text: #4A3F35;
+            --text-light: #7A6E62;
+            --text-muted: #A89B8F;
+            --shadow-soft: 0 4px 30px rgba(74, 63, 53, 0.06);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            font-weight: 300;
+            color: var(--text);
+            background: var(--warm-white);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background: rgba(255, 252, 249, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 1px 20px rgba(74, 63, 53, 0.06);
+            padding: 0 clamp(20px, 5vw, 60px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+
+        .logo-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: var(--text);
+            line-height: 1.1;
+        }
+
+        .logo-title {
+            font-family: 'Jost', sans-serif;
+            font-weight: 300;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--rose);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--rose-dark);
+            font-size: 0.88rem;
+            font-weight: 400;
+            transition: gap var(--transition), color var(--transition);
+        }
+
+        .back-link:hover { gap: 12px; color: var(--text); }
+
+        .back-link svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 clamp(20px, 5vw, 60px);
+        }
+
+        .page-hero {
+            padding: clamp(60px, 8vw, 100px) 0 clamp(40px, 5vw, 60px);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.2;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-hero h1 em {
+            font-style: italic;
+            font-weight: 400;
+            color: var(--rose-dark);
+        }
+
+        .page-hero p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .legal-content {
+            padding-bottom: clamp(60px, 8vw, 100px);
+        }
+
+        .legal-content h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: var(--text);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--blush);
+        }
+
+        .legal-content h3 {
+            font-family: 'Jost', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-content p {
+            color: var(--text-light);
+            font-size: 0.92rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        .legal-content ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        .legal-content ul li {
+            color: var(--text-light);
+            font-size: 0.92rem;
+            padding: 4px 0 4px 20px;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .legal-content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 13px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--blush-deep);
+        }
+
+        .legal-content a {
+            color: var(--rose-dark);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .legal-content a:hover { color: var(--earth); }
+
+        .legal-content strong {
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .info-box {
+            background: var(--cream);
+            border: 1px solid rgba(196, 164, 142, 0.15);
+            border-radius: var(--radius-sm);
+            padding: 24px 28px;
+            margin: 1.5rem 0;
+        }
+
+        .info-box p { margin-bottom: 0.4rem; }
+        .info-box p:last-child { margin-bottom: 0; }
+
+        footer {
+            background: var(--text);
+            color: rgba(255, 252, 249, 0.7);
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            color: rgba(255, 252, 249, 0.4);
+        }
+
+        footer a {
+            color: rgba(255, 252, 249, 0.4);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        footer a:hover { color: var(--blush); }
+
+        .footer-links { display: flex; gap: 24px; }
+
+        @media (max-width: 600px) {
+            footer .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-name">Margot Bach</span>
+            <span class="logo-title">Chirurgien-dentiste</span>
+        </a>
+        <a href="index.html" class="back-link">
+            <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Retour au site
+        </a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="page-hero">
+        <h1>Politique de <em>confidentialité</em></h1>
+        <p>Protection de vos données personnelles.</p>
+    </div>
+
+    <div class="legal-content">
+        <h2>1. Responsable du traitement</h2>
+        <p>Le responsable du traitement des données personnelles collectées sur ce site est :</p>
+        <div class="info-box">
+            <p><strong>Dr Margot Bach</strong>, chirurgien-dentiste</p>
+            <p>1 Aitterrand, 13600 La Ciotat</p>
+            <p>Téléphone : <a href="tel:04308777">04 308 777</a></p>
+        </div>
+
+        <h2>2. Données collectées</h2>
+        <p>Ce site est un site vitrine qui ne collecte <strong>aucune donnée personnelle directement</strong>. Il ne contient pas de formulaire de contact, de newsletter ni de système de création de compte.</p>
+
+        <h3>Prise de rendez-vous</h3>
+        <p>La prise de rendez-vous en ligne est gérée par la plateforme <strong>Doctolib</strong>. Lorsque vous cliquez sur le bouton « Prendre rendez-vous », vous êtes redirigé vers le site <a href="https://www.doctolib.fr" target="_blank" rel="noopener">www.doctolib.fr</a>. Les données saisies dans ce cadre sont soumises à la <a href="https://www.doctolib.fr/terms/privacy-policy" target="_blank" rel="noopener">politique de confidentialité de Doctolib</a>.</p>
+
+        <h2>3. Cookies</h2>
+        <p>Ce site n'utilise <strong>aucun cookie</strong> de suivi, d'analyse ou publicitaire.</p>
+        <p>Des cookies techniques strictement nécessaires au fonctionnement du site peuvent être déposés par l'hébergeur (GitHub Pages). Ces cookies ne collectent aucune donnée personnelle et ne nécessitent pas votre consentement conformément à la réglementation en vigueur.</p>
+
+        <h2>4. Hébergement et sécurité</h2>
+        <p>Le site est hébergé par <strong>GitHub, Inc.</strong> (88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis). La connexion au site est sécurisée par le protocole HTTPS.</p>
+        <p>GitHub peut collecter des données techniques de connexion (adresse IP, type de navigateur, etc.) dans le cadre de son service d'hébergement. Pour plus d'informations, consultez la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">politique de confidentialité de GitHub</a>.</p>
+
+        <h2>5. Vos droits</h2>
+        <p>Conformément au <strong>Règlement Général sur la Protection des Données (RGPD)</strong> et à la <strong>loi Informatique et Libertés</strong>, vous disposez des droits suivants :</p>
+        <ul>
+            <li><strong>Droit d'accès :</strong> obtenir la confirmation que des données vous concernant sont ou ne sont pas traitées</li>
+            <li><strong>Droit de rectification :</strong> demander la correction de données inexactes</li>
+            <li><strong>Droit à l'effacement :</strong> demander la suppression de vos données</li>
+            <li><strong>Droit à la limitation :</strong> demander la limitation du traitement de vos données</li>
+            <li><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données</li>
+            <li><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré</li>
+        </ul>
+        <p>Pour exercer ces droits, vous pouvez contacter le cabinet :</p>
+        <div class="info-box">
+            <p><strong>Par téléphone :</strong> <a href="tel:04308777">04 308 777</a></p>
+            <p><strong>Par courrier :</strong> Dr Margot Bach — 1 Aitterrand, 13600 La Ciotat</p>
+        </div>
+
+        <h2>6. Réclamation</h2>
+        <p>Si vous estimez que le traitement de vos données ne respecte pas la réglementation en vigueur, vous pouvez adresser une réclamation à la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> :</p>
+        <ul>
+            <li>Site web : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a></li>
+            <li>Adresse : 3 Place de Fontenoy — TSA 80715 — 75334 Paris Cedex 07</li>
+        </ul>
+
+        <h2>7. Modifications</h2>
+        <p>La présente politique de confidentialité peut être mise à jour à tout moment. Nous vous invitons à la consulter régulièrement. La date de dernière mise à jour est indiquée ci-dessous.</p>
+
+        <p style="margin-top: 2rem; font-size: 0.82rem; color: var(--text-muted);">Dernière mise à jour : mars 2026</p>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <span>&copy; 2026 Dr Margot Bach — Tous droits réservés</span>
+        <div class="footer-links">
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
