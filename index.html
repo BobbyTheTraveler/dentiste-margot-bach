@@ -1199,11 +1199,8 @@
             border: 1px solid rgba(196, 164, 142, 0.1);
         }
 
-        .rdv-wrapper iframe {
-            width: 100%;
-            height: 650px;
-            border: none;
-            display: block;
+        .rdv-doctolib-logo {
+            margin-bottom: 1.5rem;
         }
 
         .rdv-fallback {
@@ -1794,24 +1791,19 @@
             <p class="section-subtitle reveal reveal-delay-2">Réservez votre créneau directement via Doctolib, 24h/24 et 7j/7.</p>
         </div>
         <div class="rdv-wrapper reveal reveal-delay-3">
-            <!-- Widget Doctolib intégré -->
-            <iframe
-                id="doctolib-iframe"
-                src="https://www.doctolib.fr/dentiste/marseille/margot-bach?embed=true"
-                title="Prendre rendez-vous avec Dr Margot Bach sur Doctolib"
-                loading="lazy"
-                allowfullscreen
-            ></iframe>
-            <!-- Fallback : affiché si l'iframe est bloquée par Doctolib -->
-            <div class="rdv-fallback" id="rdv-fallback" style="display: none;">
-                <div style="margin-bottom: 1.5rem;">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#D4A898" stroke-width="1.2">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+            <div class="rdv-fallback">
+                <div class="rdv-doctolib-logo">
+                    <svg width="140" height="32" viewBox="0 0 140 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="#107ACA"/>
+                        <path d="M10 16.5C10 13.46 12.46 11 15.5 11H17V13H15.5C13.57 13 12 14.57 12 16.5S13.57 20 15.5 20H17V22H15.5C12.46 22 10 19.54 10 16.5Z" fill="white"/>
+                        <path d="M22 11H20V22H22V11Z" fill="white"/>
+                        <text x="40" y="22" font-family="Jost, sans-serif" font-size="18" font-weight="500" fill="#107ACA">doctolib</text>
                     </svg>
                 </div>
+                <h3 style="font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 1.4rem; margin-bottom: 0.8rem; color: var(--text);">Réservez votre créneau en ligne</h3>
                 <p>Prenez rendez-vous en quelques clics sur Doctolib.<br>Choisissez le créneau qui vous convient, confirmez, et c'est réservé.</p>
-                <a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener" class="btn-primary">
-                    Réserver sur Doctolib
+                <a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener" class="btn-primary" style="background: #107ACA;">
+                    Prendre rendez-vous sur Doctolib
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </a>
                 <div class="rdv-info">
@@ -1940,37 +1932,6 @@
 
     reveals.forEach(el => observer.observe(el));
 
-    // Doctolib iframe fallback detection
-    const doctolibIframe = document.getElementById('doctolib-iframe');
-    const rdvFallback = document.getElementById('rdv-fallback');
-
-    if (doctolibIframe && rdvFallback) {
-        // Show fallback after timeout if iframe doesn't load
-        const fallbackTimer = setTimeout(() => {
-            doctolibIframe.style.display = 'none';
-            rdvFallback.style.display = 'block';
-        }, 5000);
-
-        doctolibIframe.addEventListener('load', () => {
-            clearTimeout(fallbackTimer);
-            // Check if iframe loaded actual content or was blocked
-            try {
-                const iframeDoc = doctolibIframe.contentDocument || doctolibIframe.contentWindow.document;
-                if (!iframeDoc || iframeDoc.body.innerHTML === '') {
-                    doctolibIframe.style.display = 'none';
-                    rdvFallback.style.display = 'block';
-                }
-            } catch (e) {
-                // Cross-origin = iframe loaded Doctolib content (good)
-            }
-        });
-
-        doctolibIframe.addEventListener('error', () => {
-            clearTimeout(fallbackTimer);
-            doctolibIframe.style.display = 'none';
-            rdvFallback.style.display = 'block';
-        });
-    }
 </script>
 </body>
 </html>
