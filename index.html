@@ -1161,6 +1161,87 @@
             margin-top: 3rem;
         }
 
+        /* ═══════════════ RENDEZ-VOUS (Doctolib) ═══════════════ */
+        .rdv {
+            padding: clamp(60px, 10vw, 120px) 0;
+            background: linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rdv::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background: var(--blush);
+        }
+
+        .rdv-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .rdv-header .section-subtitle {
+            margin: 0.8rem auto 0;
+        }
+
+        .rdv-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-medium);
+            overflow: hidden;
+            border: 1px solid rgba(196, 164, 142, 0.1);
+        }
+
+        .rdv-wrapper iframe {
+            width: 100%;
+            height: 650px;
+            border: none;
+            display: block;
+        }
+
+        .rdv-fallback {
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        .rdv-fallback p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .rdv-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .rdv-info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .rdv-info-item svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--rose-dark);
+            fill: none;
+            stroke-width: 1.5;
+        }
+
         /* ═══════════════ FOOTER ═══════════════ */
         footer {
             background: var(--text);
@@ -1444,7 +1525,7 @@
             <a href="#soins">Les Soins</a>
             <a href="#equipe">Équipe</a>
             <a href="#infos">Infos Pratiques</a>
-            <a href="https://www.doctolib.fr" target="_blank" rel="noopener" class="nav-cta">Prendre RDV</a>
+            <a href="#rdv" class="nav-cta">Prendre RDV</a>
         </nav>
         <button class="menu-toggle" id="menuToggle" aria-label="Menu">
             <span></span><span></span><span></span>
@@ -1464,7 +1545,7 @@
             <h1 class="reveal reveal-delay-1">Votre cabinet<br>dentaire <em>à La Ciotat</em></h1>
             <p class="hero-text reveal reveal-delay-2">Des soins attentifs dans un cadre doux, moderne et rassurant. Nous vous accueillons dans une atmosphère pensée pour votre bien-être.</p>
             <div class="hero-buttons reveal reveal-delay-3">
-                <a href="https://www.doctolib.fr" target="_blank" rel="noopener" class="btn-primary">
+                <a href="#rdv" class="btn-primary">
                     Prendre rendez-vous
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -1645,7 +1726,7 @@
                 <p>Formée aux techniques les plus récentes, elle propose une approche douce et préventive, adaptée aux besoins de chacun — adultes comme enfants. Son objectif : vous accompagner vers une santé bucco-dentaire optimale, en toute sérénité.</p>
             </div>
             <div class="doctor-buttons reveal reveal-delay-4">
-                <a href="https://www.doctolib.fr" target="_blank" rel="noopener" class="btn-primary">
+                <a href="#rdv" class="btn-primary">
                     Prendre rendez-vous
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -1688,7 +1769,7 @@
                 </div>
                 <h3>Téléphone</h3>
                 <p><a href="tel:04308777">04 308 777</a></p>
-                <p style="margin-top: 12px; font-size: 0.82rem;">Rendez-vous en ligne<br><a href="https://www.doctolib.fr" target="_blank" rel="noopener" style="font-weight: 500;">Prendre RDV sur Doctolib</a></p>
+                <p style="margin-top: 12px; font-size: 0.82rem;">Rendez-vous en ligne<br><a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener" style="font-weight: 500;">Prendre RDV sur Doctolib</a></p>
             </div>
         </div>
         <div class="map-container reveal">
@@ -1696,10 +1777,58 @@
             <span>Carte — 1 Aitterrand, 13600 La Ciotat</span>
         </div>
         <div class="infos-cta reveal">
-            <a href="https://www.doctolib.fr" target="_blank" rel="noopener" class="btn-primary">
+            <a href="#rdv" class="btn-primary">
                 Prendre rendez-vous en ligne
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ RENDEZ-VOUS ═══════════════ -->
+<section class="rdv" id="rdv">
+    <div class="container">
+        <div class="rdv-header">
+            <span class="section-label reveal">Rendez-vous</span>
+            <h2 class="section-title reveal reveal-delay-1">Prendre <em>rendez-vous</em> en ligne</h2>
+            <p class="section-subtitle reveal reveal-delay-2">Réservez votre créneau directement via Doctolib, 24h/24 et 7j/7.</p>
+        </div>
+        <div class="rdv-wrapper reveal reveal-delay-3">
+            <!-- Widget Doctolib intégré -->
+            <iframe
+                id="doctolib-iframe"
+                src="https://www.doctolib.fr/dentiste/marseille/margot-bach?embed=true"
+                title="Prendre rendez-vous avec Dr Margot Bach sur Doctolib"
+                loading="lazy"
+                allowfullscreen
+            ></iframe>
+            <!-- Fallback : affiché si l'iframe est bloquée par Doctolib -->
+            <div class="rdv-fallback" id="rdv-fallback" style="display: none;">
+                <div style="margin-bottom: 1.5rem;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#D4A898" stroke-width="1.2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+                    </svg>
+                </div>
+                <p>Prenez rendez-vous en quelques clics sur Doctolib.<br>Choisissez le créneau qui vous convient, confirmez, et c'est réservé.</p>
+                <a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener" class="btn-primary">
+                    Réserver sur Doctolib
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <div class="rdv-info">
+                    <div class="rdv-info-item">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        Réponse immédiate
+                    </div>
+                    <div class="rdv-info-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Données sécurisées
+                    </div>
+                    <div class="rdv-info-item">
+                        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Confirmation par SMS
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -1744,7 +1873,7 @@
                 </div>
                 <div class="footer-contact-item">
                     <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    <span><a href="https://www.doctolib.fr" target="_blank" rel="noopener">Doctolib</a></span>
+                    <span><a href="https://www.doctolib.fr/dentiste/marseille/margot-bach" target="_blank" rel="noopener">Doctolib</a></span>
                 </div>
             </div>
         </div>
@@ -1810,6 +1939,38 @@
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
     reveals.forEach(el => observer.observe(el));
+
+    // Doctolib iframe fallback detection
+    const doctolibIframe = document.getElementById('doctolib-iframe');
+    const rdvFallback = document.getElementById('rdv-fallback');
+
+    if (doctolibIframe && rdvFallback) {
+        // Show fallback after timeout if iframe doesn't load
+        const fallbackTimer = setTimeout(() => {
+            doctolibIframe.style.display = 'none';
+            rdvFallback.style.display = 'block';
+        }, 5000);
+
+        doctolibIframe.addEventListener('load', () => {
+            clearTimeout(fallbackTimer);
+            // Check if iframe loaded actual content or was blocked
+            try {
+                const iframeDoc = doctolibIframe.contentDocument || doctolibIframe.contentWindow.document;
+                if (!iframeDoc || iframeDoc.body.innerHTML === '') {
+                    doctolibIframe.style.display = 'none';
+                    rdvFallback.style.display = 'block';
+                }
+            } catch (e) {
+                // Cross-origin = iframe loaded Doctolib content (good)
+            }
+        });
+
+        doctolibIframe.addEventListener('error', () => {
+            clearTimeout(fallbackTimer);
+            doctolibIframe.style.display = 'none';
+            rdvFallback.style.display = 'block';
+        });
+    }
 </script>
 </body>
 </html>
